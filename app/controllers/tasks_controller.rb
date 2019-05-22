@@ -43,6 +43,7 @@ before_action :authenticate_user!
     @task = Task.find(params[:id])
     @task.destroy
     redirect_to root_path
+    flash[:notice] = "Task destroyed"
   end
 
 

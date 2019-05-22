@@ -1,3 +1,1 @@
-alert("le fichier JS est exécuté!");
-document.getElementsByClassName("text-center mb-4")[0].insertAdjacentHTML("beforeend", "<p>COUCOU</p>");
-document.getElementByID("task-list").insertAdjacentHTML("beforeend", "<li>COUCOU</li>")
+document.getElementsByClassName("task-list")["<%= @category.id %>"-1].insertAdjacentHTML("beforeend", "<%= j render 'task', task: @task %>");
