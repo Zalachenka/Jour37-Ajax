@@ -1,5 +1,5 @@
 <h4>Edit your task</h4>
-<%= form_tag(task_path, method: "put") do %>
+<%= form_tag(task_path, method: "put", remote: true) do %>
   <div class="form-group">
       <%= label_tag("Your task:") %>
       <%= text_field_tag(:title, @task.title) %>
